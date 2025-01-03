@@ -1,16 +1,22 @@
 import React from 'react'
 
-const Button = (props) => {
-  // props = {name: '확인'}
+const Button = ({name, bg}) => {
+  // props = {name: '확인', bg: 'blue-500'}
+  // 구조분해할당
+  // const {name, bg} = props
   return (
-    <button className='bg-blue-500 text-white py-3 px-5'>{props.name}</button>
+    // bg-blue-500
+    <button 
+    className={`bg-${bg}`}>
+      {name}
+      </button>
   )
 }
 
 export const Button2 = (props) => {
-  // props = {children: '새로고침'}
+  // props = {children: '새로고침', bg: 'blue-500'}
   return (
-    <button className='bg-blue-500 text-white py-3 px-5'>{props.children}</button>
+    <button className={`bg-${props.bg}`}>{props.children}</button>
   )
 }
 
