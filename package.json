@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "classnames": "^2.5.1",
+    "lucide-react": "^0.469.0",
     "mercury": "^14.2.0",
     "next": "15.1.2",
     "react": "^19.0.0",
